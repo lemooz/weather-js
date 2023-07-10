@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web App</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 class="firstH2">Search a city...</h2>
+            <div class="form-input-container">
+                <input type="text" placeholder="Write your city name..." class="city-input">
+                <button id="search"><i class="fa-solid fa-magnifying-glass" onclick="searchCity()"></i></button>
+                <img src="img/usa-flag.png" alt="Language" id="flagLang">
+                <input type="checkbox" id="switch" checked/><label id="switchLabel" for="switch">Toggle</label>
+            </div>
+        </div>
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="city"></span>
+            </h2>
+            <p class="temperature">...</p>
+            <div id="description-container">
+                <p class="description">...</p>
+            </div>
+            <div class="details-container">
+                <i class="fa-solid fa-droplet"aria-hidden="true" id="windLang">Humidity</i>
+                <p class="humidity">
+                    <span>68%</span>
+                </p>
+                <i class="fa-solid fa-wind"aria-hidden="true" id="humidityLang">Wind</i>
+                <p class="wind">
+                    <span>3m/h</span>
+                </p>
+                <i class="fa fa-thermometer-half" aria-hidden="true" id="feelsLang">Feels like:</i>
+                <p class="feels">
+                    <span>35</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
